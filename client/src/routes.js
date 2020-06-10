@@ -85,6 +85,14 @@ const routes = [
     component: EditOrganizationProfile,
   },
   {
+    path: "/edit-organization-account",
+    component: EditOrganizationAccount,
+  },
+  {
+    path: "/edit-organization-profile",
+    component: EditOrganizationProfile,
+  },
+  {
     path: "/medical",
     component: Medical,
   },
