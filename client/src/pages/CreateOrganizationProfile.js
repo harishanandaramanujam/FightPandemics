@@ -69,6 +69,7 @@ const InputWrapper = styled.div`
 const StyleLabel = {
   textAlign: "left",
   color: "#425af2"
+
 };
 
 const StyleInput = {
@@ -118,7 +119,6 @@ const CreateOrgProfile = (props) => {
   const [ orgIndustry, setIndustry ] = useState("");
   const [state, setState] = useState(initialState.state);
   const { typeModal, industryModal, options } = state;
-
 
   const handleInputChangePrivacy = (e) => {
     setPrivacy(e.target.value);
@@ -259,20 +259,6 @@ const CreateOrgProfile = (props) => {
       )
     }
   }
-
-  //
-  // const onFormSubmit = async (data) => {
-  //   // e.preventDefault();
-  //   console.log(data);
-  //   if (!errors.length) {
-  //     // todo: finish integrating api
-  //     try {
-  //       // const req = await axios.post("/api/posts", formData);
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   }
-  // };
 
   const onFormSubmit = (data) => {
     if(!privacy) {
